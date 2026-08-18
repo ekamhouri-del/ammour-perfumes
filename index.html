@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090908">
+<meta name="description" content="AMMOUR PERFUMES — perfumería de lujo. Perfumes para hombre, mujer y perfumes de nicho.">
+<title>AMMOUR PERFUMES</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#090908;--panel:#11110f;--gold:#c9a45c;--gold2:#e6c982;--cream:#f6f1e7;--muted:#aaa59b;--line:rgba(201,164,92,.28);--serif:"Cormorant Garamond",Georgia,serif;--sans:"Montserrat",Arial,sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--cream);font-family:var(--sans);font-weight:300}button,input,select{font:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}
+header{height:76px;position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:8px 5vw;background:rgba(9,9,8,.95);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.06)}
+.logo{height:58px;width:95px;object-fit:contain}.nav{display:flex;gap:27px;font-size:10px;letter-spacing:.17em;text-transform:uppercase}.nav a{opacity:.8}.nav a:hover{color:var(--gold2);opacity:1}.actions{display:flex;gap:8px}.action{border:1px solid var(--line);background:transparent;color:var(--cream);padding:10px 12px;font-size:10px;letter-spacing:.1em;text-transform:uppercase}.count{display:inline-grid;place-items:center;min-width:19px;height:19px;margin-left:5px;border-radius:50%;background:var(--gold);color:#111;font-size:9px}
+.hero{min-height:calc(100svh - 76px);display:grid;place-items:center;text-align:center;position:relative;overflow:hidden;background:radial-gradient(circle at 50% 40%,rgba(201,164,92,.13),transparent 31%),linear-gradient(135deg,#070706,#15130f 55%,#070706)}.hero:after{content:"";position:absolute;inset:7%;border:1px solid rgba(201,164,92,.12)}.hero-inner{position:relative;z-index:2;padding:80px 20px;max-width:820px}.eyebrow{color:var(--gold2);font-size:10px;letter-spacing:.35em;text-transform:uppercase;margin:0 0 17px}.hero h1{font:500 clamp(64px,12vw,125px)/.78 var(--serif);letter-spacing:-.04em;margin:0}.hero h1 em{font-weight:400;color:var(--gold2)}.hero p:not(.eyebrow){max-width:600px;color:#bbb5aa;font-size:14px;line-height:1.9;margin:35px auto}.btn{display:inline-block;border:1px solid var(--gold);background:var(--gold);color:#111;padding:15px 24px;font-size:10px;letter-spacing:.18em;text-transform:uppercase}.btn:hover{background:transparent;color:var(--gold2)}
+section{padding:100px 6vw}.center{text-align:center}.title{font:500 clamp(45px,7vw,75px)/.9 var(--serif);margin:0 0 20px}.lead{max-width:650px;margin:auto;color:var(--muted);line-height:1.9;font-size:13px}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:55px}.cat{min-height:260px;border:1px solid var(--line);padding:28px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(145deg,rgba(201,164,92,.09),transparent 65%);transition:.25s}.cat:hover{transform:translateY(-5px);border-color:var(--gold)}.cat small{color:var(--gold);letter-spacing:.2em;margin-bottom:auto}.cat h3{font:500 39px var(--serif);margin:0 0 6px}.cat p{font-size:10px;color:#8d8980;letter-spacing:.08em}
+.catalog{background:#0d0d0b}.toolbar{display:flex;justify-content:space-between;gap:15px;align-items:center;margin:35px 0}.search{flex:1;max-width:420px;border-bottom:1px solid var(--line);display:flex;gap:8px}.search input{width:100%;padding:12px 0;background:transparent;border:0;outline:0;color:#fff;font-size:11px}.filter{background:#111;color:#eee;border:1px solid var(--line);padding:12px;font-size:10px}.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{background:#11110f;border:1px solid rgba(255,255,255,.06);overflow:hidden;transition:.25s}.card:hover{transform:translateY(-4px);border-color:var(--line)}.visual{height:310px;display:grid;place-items:center;background:radial-gradient(circle at 50% 30%,rgba(255,255,255,.12),transparent 18%),linear-gradient(145deg,#1c1a16,#0b0b0a)}.bottle{width:88px;height:172px;border-radius:12px 12px 19px 19px;background:linear-gradient(90deg,#24221d,#e3cb91 48%,#302c24);box-shadow:0 22px 35px rgba(0,0,0,.65);position:relative}.bottle:before{content:"";position:absolute;width:38px;height:32px;left:25px;top:-25px;background:#ae8d4c;border-radius:3px 3px 0 0}.bottle:after{content:"AMMOUR";position:absolute;left:7px;right:7px;top:72px;text-align:center;font:600 10px var(--serif);color:#111;letter-spacing:.08em}.info{padding:18px}.meta{display:flex;justify-content:space-between;color:var(--gold);font-size:8px;letter-spacing:.15em;text-transform:uppercase}.info h3{font:500 29px var(--serif);margin:7px 0 2px}.notes{font-size:10px;color:#858178;margin:0 0 16px}.row{display:flex;justify-content:space-between;align-items:center}.price{font-size:12px}.add{background:transparent;border:1px solid var(--line);color:var(--gold2);padding:9px 11px;font-size:9px;letter-spacing:.1em;text-transform:uppercase}.add:hover{background:var(--gold);color:#111}
+.manifesto{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;background:#11110f}.manifesto h2{font:500 clamp(54px,7vw,90px)/.8 var(--serif);margin:0}.manifesto p:last-child{color:#aaa59a;line-height:2;font-size:13px}
+.news{text-align:center}.news form{max-width:570px;margin:30px auto 0;display:flex;gap:8px}.news input{flex:1;background:transparent;border:0;border-bottom:1px solid var(--gold);outline:0;padding:14px;color:#fff}.msg{color:var(--gold2);font-size:10px;margin-top:12px}
+footer{padding:45px 20px;text-align:center;border-top:1px solid rgba(255,255,255,.08);color:#777;font-size:9px;letter-spacing:.12em}.footer-logo{font:500 29px var(--serif);color:var(--gold2)}
+.drawer{position:fixed;z-index:80;right:0;top:0;width:min(440px,94vw);height:100svh;background:#10100e;border-left:1px solid var(--line);transform:translateX(105%);transition:.3s;padding:28px;display:flex;flex-direction:column}.drawer.open{transform:translateX(0)}.drawer-head{display:flex;justify-content:space-between;border-bottom:1px solid var(--line);padding-bottom:18px}.drawer h2{font:500 44px var(--serif);margin:0}.close{background:none;border:0;color:#fff;font-size:28px}.items{flex:1;overflow:auto}.empty{text-align:center;color:#777;line-height:1.8;padding:70px 15px}.item{display:grid;grid-template-columns:55px 1fr auto;gap:13px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.07)}.mini{width:52px;height:70px;border-radius:7px;background:linear-gradient(90deg,#26231c,#dfc686,#332e24)}.item h4{font:500 22px var(--serif);margin:0}.item p{font-size:9px;color:#888;margin:3px 0 8px}.qty{display:flex;align-items:center;gap:7px}.qty button{width:23px;height:23px;background:transparent;color:#fff;border:1px solid var(--line)}.drawer-foot{border-top:1px solid var(--line);padding-top:18px}.total{display:flex;justify-content:space-between;margin-bottom:15px}.total strong{color:var(--gold2)}.overlay{position:fixed;z-index:70;inset:0;background:rgba(0,0,0,.65);opacity:0;pointer-events:none;transition:.3s}.overlay.open{opacity:1;pointer-events:auto}
+.modal{position:fixed;z-index:90;inset:0;display:none;place-items:center;padding:20px;background:rgba(0,0,0,.75)}.modal.open{display:grid}.modal-box{width:min(700px,100%);background:#11110f;border:1px solid var(--line);padding:30px;position:relative}.modal-box .big{height:260px;display:grid;place-items:center;background:#0b0b09}.modal-box h2{font:500 48px var(--serif);margin:15px 0 5px}.modal-box p{color:#999;line-height:1.7;font-size:12px}.modal-close{position:absolute;right:16px;top:10px;background:none;border:0;color:#fff;font-size:28px}
+@media(max-width:900px){.nav{display:none}.categories,.grid{grid-template-columns:repeat(2,1fr)}.manifesto{grid-template-columns:1fr;gap:30px}.toolbar{flex-direction:column;align-items:stretch}.search{max-width:none}}
+@media(max-width:600px){header{height:68px;padding:6px 14px}.logo{height:53px;width:82px}.action span{display:none}.action{padding:9px}.hero{min-height:80svh}.hero-inner{padding:60px 16px}.hero h1{font-size:70px}section{padding:75px 18px}.categories,.grid{grid-template-columns:1fr}.visual{height:285px}.news form{flex-direction:column}.news .btn{width:100%}.manifesto{padding:75px 25px}}
+</style>
+</head>
+<body>
+<header>
+  <a href="#inicio"><img class="logo" src="logo.png" alt="AMMOUR PERFUMES"></a>
+  <nav class="nav">
+    <a href="#coleccion">Colección</a><a href="#catalogo">Catálogo</a><a href="#catalogo" data-cat="Hombre">Hombre</a><a href="#catalogo" data-cat="Mujer">Mujer</a><a href="#catalogo" data-cat="Nicho">Nicho</a>
+  </nav>
+  <div class="actions"><button class="action" id="cartBtn">🛍 <span>Carrito</span> <b class="count" id="count">0</b></button></div>
+</header>
+
+<main>
+<section class="hero" id="inicio"><div class="hero-inner">
+  <p class="eyebrow">AMMOUR PERFUMES</p><h1>El arte de<br><em>dejar huella.</em></h1>
+  <p>Perfumes elegantes, sensuales y memorables para quienes convierten la fragancia en una firma personal.</p>
+  <a class="btn" href="#catalogo">Descubrir la colección</a>
+</div></section>
+
+<section id="coleccion" class="center">
+  <p class="eyebrow">La colección</p><h2 class="title">Encuentra tu esencia</h2>
+  <p class="lead">Una selección pensada para hombres, mujeres y amantes de la perfumería de nicho.</p>
+  <div class="categories">
+    <a class="cat" href="#catalogo" data-cat="Hombre"><small>01</small><h3>Hombre</h3><p>Intensas · sofisticadas · magnéticas</p></a>
+    <a class="cat" href="#catalogo" data-cat="Mujer"><small>02</small><h3>Mujer</h3><p>Elegantes · luminosas · irresistibles</p></a>
+    <a class="cat" href="#catalogo" data-cat="Nicho"><small>03</small><h3>Perfumes de nicho</h3><p>Únicos · artísticos · excepcionales</p></a>
+  </div>
+</section>
+
+<section id="catalogo" class="catalog">
+  <div class="center"><p class="eyebrow">Catálogo</p><h2 class="title">La colección AMMOUR</h2></div>
+  <div class="toolbar"><label class="search">⌕ <input id="search" placeholder="Buscar una fragancia…"></label><select class="filter" id="filter"><option>Todos</option><option>Hombre</option><option>Mujer</option><option>Nicho</option></select></div>
+  <div class="grid" id="grid"></div>
+</section>
+
+<section class="manifesto"><div><p class="eyebrow">Nuestra filosofía</p><h2>Una fragancia.<br>Una identidad.</h2></div><p>En AMMOUR, el lujo está en el detalle. Seleccionamos fragancias por su carácter, su estela y la emoción que dejan. Tu perfume no es solo un aroma: es la huella que permanece.</p></section>
+
+<section class="news"><p class="eyebrow">El mundo AMMOUR</p><h2 class="title">Sé el primero en descubrir</h2><p class="lead">Nuevas fragancias, novedades y ofertas exclusivas.</p><form id="form"><input type="email" required placeholder="Tu correo electrónico"><button class="btn">Suscribirme</button></form><div class="msg" id="msg"></div></section>
+</main>
+
+<footer><div class="footer-logo">AMMOUR PERFUMES</div><p>Perfumería de lujo · Elegancia que permanece.</p><p>© <span id="year"></span> AMMOUR PERFUMES</p></footer>
+
+<aside class="drawer" id="drawer"><div class="drawer-head"><div><p class="eyebrow">Tu selección</p><h2>Carrito</h2></div><button class="close" id="close">×</button></div><div class="items" id="items"></div><div class="drawer-foot"><div class="total"><span>Total</span><strong id="total">0,00 €</strong></div><button class="btn" style="width:100%" id="order">Pedir por WhatsApp</button><p style="color:#666;font-size:9px;text-align:center;line-height:1.5">El botón de WhatsApp se activa cuando introduzcas tu número de empresa en el código.</p></div></aside><div class="overlay" id="overlay"></div>
+
+<div class="modal" id="modal"><div class="modal-box"><button class="modal-close" id="modalClose">×</button><div class="big"><div class="bottle"></div></div><div id="modalContent"></div></div></div>
+
+<script>
+const products=[
+{id:1,n:"Éclat Noir",c:"Hombre",notes:"Ámbar · Madera · Especias",p:89,d:"Una composición profunda y elegante con una estela cálida, amaderada y magnética."},
+{id:2,n:"Santal Royal",c:"Hombre",notes:"Sándalo · Cuero · Azafrán",p:119,d:"Un perfume sofisticado donde el sándalo cremoso se encuentra con cuero y azafrán."},
+{id:3,n:"Velours",c:"Mujer",notes:"Rosa · Vainilla · Almizcle",p:95,d:"Suave, sensual y envolvente, con un corazón floral sobre un fondo de vainilla."},
+{id:4,n:"Lumière",c:"Mujer",notes:"Flor de azahar · Iris · Ámbar",p:99,d:"Luminoso y refinado, pensado para una elegancia discreta que permanece."},
+{id:5,n:"Oud Impérial",c:"Nicho",notes:"Oud · Incienso · Pachulí",p:165,d:"Una creación intensa y artística para quienes buscan una firma olfativa excepcional."},
+{id:6,n:"Rose Sombre",c:"Nicho",notes:"Rosa oscura · Oud · Ciruela",p:179,d:"Una rosa misteriosa y opulenta, contrastada por oud y notas oscuras."},
+{id:7,n:"Maison d'Or",c:"Hombre",notes:"Bergamota · Vetiver · Madera",p:109,d:"Fresco al inicio, amaderado al final: una firma elegante para todos los días."},
+{id:8,n:"Jasmin Blanc",c:"Mujer",notes:"Jazmín · Pera · Almizcle blanco",p:115,d:"Una estela limpia y luminosa, floral y delicadamente sensual."}
+];
+const fmt=n=>new Intl.NumberFormat("es-ES",{style:"currency",currency:"EUR"}).format(n);
+let cart=JSON.parse(localStorage.getItem("ammourCart")||"[]");
+const grid=document.getElementById("grid"), filter=document.getElementById("filter"), search=document.getElementById("search");
+function render(){
+ const q=search.value.toLowerCase(), f=filter.value;
+ const list=products.filter(x=>(f==="Todos"||x.c===f)&&[x.n,x.c,x.notes].join(" ").toLowerCase().includes(q));
+ grid.innerHTML=list.map(x=>`<article class="card"><div class="visual"><div class="bottle"></div></div><div class="info"><div class="meta"><span>${x.c}</span><span>50 ML</span></div><h3>${x.n}</h3><p class="notes">${x.notes}</p><div class="row"><span class="price">${fmt(x.p)}</span><div><button class="add" data-view="${x.id}">Ver</button> <button class="add" data-add="${x.id}">Añadir</button></div></div></div></article>`).join("");
+ document.querySelectorAll("[data-add]").forEach(b=>b.onclick=()=>add(+b.dataset.add));
+ document.querySelectorAll("[data-view]").forEach(b=>b.onclick=()=>view(+b.dataset.view));
+}
+function add(id){let x=cart.find(a=>a.id===id);x?x.q++:cart.push({id,q:1});save();openCart()}
+function save(){localStorage.setItem("ammourCart",JSON.stringify(cart));renderCart()}
+function renderCart(){
+ document.getElementById("count").textContent=cart.reduce((a,x)=>a+x.q,0);
+ const box=document.getElementById("items");
+ if(!cart.length)box.innerHTML='<div class="empty">Tu carrito está vacío.<br>Descubre tu próxima firma olfativa.</div>';
+ else box.innerHTML=cart.map(i=>{let x=products.find(p=>p.id===i.id);return `<div class="item"><div class="mini"></div><div><h4>${x.n}</h4><p>${x.c} · ${fmt(x.p)}</p><div class="qty"><button data-q="${x.id}" data-d="-1">−</button><span>${i.q}</span><button data-q="${x.id}" data-d="1">+</button></div></div><strong>${fmt(x.p*i.q)}</strong></div>`}).join("");
+ box.querySelectorAll("[data-q]").forEach(b=>b.onclick=()=>qty(+b.dataset.q,+b.dataset.d));
+ document.getElementById("total").textContent=fmt(cart.reduce((a,i)=>a+products.find(p=>p.id===i.id).p*i.q,0));
+}
+function qty(id,d){let x=cart.find(a=>a.id===id);x.q+=d;if(x.q<=0)cart=cart.filter(a=>a.id!==id);save()}
+function openCart(){drawer.classList.add("open");overlay.classList.add("open")}
+function closeCart(){drawer.classList.remove("open");overlay.classList.remove("open")}
+function view(id){let x=products.find(p=>p.id===id);modalContent.innerHTML=`<p class="eyebrow">${x.c} · 50 ML</p><h2>${x.n}</h2><p><strong style="color:#e6c982">${x.notes}</strong></p><p>${x.d}</p><p style="font-size:18px;color:#e6c982">${fmt(x.p)}</p><button class="btn" onclick="add(${x.id});modal.classList.remove('open')">Añadir al carrito</button>`;modal.classList.add("open")}
+filter.onchange=render;search.oninput=render;
+document.querySelectorAll("[data-cat]").forEach(a=>a.onclick=()=>{filter.value=a.dataset.cat;setTimeout(render,20)});
+cartBtn.onclick=openCart;close.onclick=closeCart;overlay.onclick=closeCart;modalClose.onclick=()=>modal.classList.remove("open");
+form.onsubmit=e=>{e.preventDefault();msg.textContent="¡Gracias! Bienvenido al universo AMMOUR.";form.reset()};
+document.getElementById("year").textContent=new Date().getFullYear();
+order.onclick=()=>{if(!cart.length){alert("Tu carrito está vacío.");return}alert("Para activar los pedidos por WhatsApp, sustituiremos el número de ejemplo por el número de tu tienda.");};
+render();renderCart();
+</script>
+</body>
+</html>
